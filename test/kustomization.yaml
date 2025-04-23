@@ -13,4 +13,4 @@ configMapGenerator:
   - name: httpd-config
     behavior: merge
     files:
-      - config/base-httpd.conf
+      - config/test-httpd.conf
