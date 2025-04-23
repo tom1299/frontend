@@ -4,7 +4,7 @@ namespace: test
 resources:
   - ../base
 patches:
-  - path: replicas-patch.yaml
+  - path: deployment-patch.yaml
 images:
   - name: frontend
     newName: ghcr.io/yourusername/frontend
