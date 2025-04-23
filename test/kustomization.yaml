@@ -9,3 +9,8 @@ images:
   - name: frontend
     newName: ghcr.io/yourusername/frontend
     newTag: test
+configMapGenerator:
+  - name: httpd-config
+    behavior: merge
+    files:
+      - config/test-httpd.conf

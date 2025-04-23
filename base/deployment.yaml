@@ -21,3 +21,11 @@ spec:
           limits:
             memory: "128Mi"
             cpu: "100m"
+        volumeMounts:
+        - name: httpd-config-volume
+          mountPath: /etc/httpd/conf.d/
+          readOnly: true
+      volumes:
+      - name: httpd-config-volume
+        configMap:
+          name: httpd-config
